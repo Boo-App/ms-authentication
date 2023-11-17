@@ -1,35 +1,23 @@
 {
-    "name": "authentication",
-    "version": "1.0.0",
-    "main": "app.js",
-    "repository": "https://github.com/Boo-App/ms-authentication",
-    "author": "Antonin15-76 https://github.com/Antonin15-76",
-    "license": "MIT",
-    "engines": {
-        "node": "14.x",
-        "npm": "6.x"
-    },
-    "scripts": {
-        "dev": "nodemon app.ts",
-        "start": "node app.js",
-        "build": "tsc",
-        "postinstall": "npm install -g ts-node && npm i --save-dev @types/bcrypt @types/jsonwebtoken && npm run build",
-        "deploy": "git add . && git commit -m Heroku && git push"
-    },
-    "dependencies": {
-        "bcrypt": "^5.0.1",
-        "body-parser": "^1.19.0",
-        "cors": "^2.8.5",
-        "dotenv": "^10.0.0",
-        "express": "^4.17.1",
-        "jsonwebtoken": "^8.5.1",
-        "mongoose": "^6.0.13",
-        "nodemon": "^2.0.15",
-        "typescript": "^4.5.2"
-    },
-    "devDependencies": {
-        "@types/bcrypt": "^5.0.2",
-        "@types/express": "^4.17.13",
-        "@types/jsonwebtoken": "^8.5.9"
-    }
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --trace-warnings index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1"
+  }
 }
