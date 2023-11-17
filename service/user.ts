@@ -1,4 +1,5 @@
-const UserDAO = require("../dao/user")
+import {UserDAO} from "../dao/user"
+import User from "../interface/user"
 
 export class UserService {
     

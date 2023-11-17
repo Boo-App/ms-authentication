@@ -1,3 +1,4 @@
+import User from "../interface/user";
 import * as bcrypt from "bcrypt";
 import * as jwt from "jsonwebtoken";
 
