@@ -13,8 +13,8 @@
     "dev": "nodemon app.ts",
     "start": "node app.js",
     "build": "tsc",
-    "postinstall": "npm install -g ts-node && npm i --save-dev @types/bcrypt @types/jsonwebtoken && npm run build",
-    "deploy": "git add . && git commit -m Heroku && git push"
+    "postinstall": "npm install -g ts-node && npm i --save-dev @types/jsonwebtoken && npm i --save @types/node && npm install typescript && npm run build",
+    "deploy": "git add . && git commit -m Build && git push"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
