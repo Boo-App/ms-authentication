@@ -47,17 +47,17 @@ app.get("/users", async (req: Request, res: any) => {
 });
 
 app.post("/sign-up", async (req: Request, res: any) => {
+  console.log("50", req.body)
   try {
     const signup = await usersService.signUp(req.body);
     res.status(200).send(signup);
   } catch (e) {
-    console.log(e);
     res.status(400).send("Tu as déjà un compte. Connecte toi !");
   }
 });
 
 app.post("/sign-in", async (req: any, res: any) => {
-  console.log(req.body);
+  console.log("body", req.body);
   try {
     const signin = await usersService.signIn(req.body.password, req.body.email);
     res.status(200).send(signin);

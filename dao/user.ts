@@ -11,8 +11,12 @@ export class UserDAO {
 
   async signUp(user: any) {
     const { firstName, lastName, email, password } = user;
+    if (!email && !password) {
+      console.log("here")
+      throw new Error("Pas d'email ou de mot de passe")
+    }
     const findUser = await UserModel.findOne({ email });
-
+    console.log("tes", findUser)
     if (!findUser) {
       const hashPass = await bcrypt.hash(String(password), 10);
 
@@ -36,7 +40,8 @@ export class UserDAO {
   }
 
   async signIn(password: String, email: String) {
-    console.log(password);
+    console.log("password", password);
+    console.log("email", email);
     const user = await UserModel.findOne({ email: email });
     if (user) {
       const verifyHash = await bcrypt.compare(String(password), user.password);
