@@ -13,7 +13,7 @@
     "dev": "nodemon app.ts",
     "start": "node app.js",
     "build": "npx tsc",
-    "postinstall": "npm install -g ts-node && npm i --save-dev @types/jsonwebtoken && npm i --save @types/node && npm install typescript && npm run build",
+    "postinstall": "npm install -g ts-node && npm i --save-dev @types/jsonwebtoken && @types/bcrypt @types/jsonwebtoken && npm i --save @types/node && npm install typescript && npm run build",
     "deploy": "git add . && git commit -m Build && git push"
   },
   "dependencies": {
