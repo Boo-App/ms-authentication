@@ -20,8 +20,8 @@ Add `.env` :
 
 ```
 PORT=3000
-MONGO_USERNAME=admin
-MONGO_PASS=CfQ8q6N59w6FHCt
+MONGO_USERNAME=admin-booApp
+MONGO_PASS=boo-app-password-atlas
 MONGO_DB=users
 ```
 
