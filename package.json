@@ -11,9 +11,9 @@
   },
   "scripts": {
     "dev": "nodemon app.ts",
-    "start": "node app.js",
+    "start": "node build/app.js",
     "build": "npx tsc",
-    "postinstall": "npm install -g ts-node && npm i --save-dev @types/bcrypt @types/jsonwebtoken && npm run build",
+    "postinstall": "npm install -g ts-node && npm i --save-dev @types/bcrypt @types/jsonwebtoken && npm install typescript && npm run build",
     "deploy": "git add . && git commit -m Build && git push"
   },
   "dependencies": {
