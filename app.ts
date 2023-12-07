@@ -16,7 +16,7 @@ app.use(function (
   res: { setHeader: (arg0: string, arg1: string | boolean) => void },
   next: () => void
 ) {
-  res.setHeader("Access-Control-Allow-Origin", "https://boo-app-21b00.web.app/");
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   res.setHeader(
     "Access-Control-Allow-Methods",
